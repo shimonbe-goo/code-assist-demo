@@ -1,6 +1,6 @@
-# coderabbit-demo
+# code-assist-demo
 
-A small Flask service used to try out CodeRabbit's PR review.
+A small Python Flask service used to demonstrate Gemini Code Assist's automated Pull Request reviews.
 
 ## Run
 
