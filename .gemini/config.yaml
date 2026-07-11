@@ -1,0 +1,36 @@
+# Configuration for Gemini Code Assist on this repository.
+# All fields are optional and have default values.
+
+# Enables fun features such as a poem in the initial pull request summary.
+have_fun: false
+
+# Configuration for persistent memory, which is used to improve responses.
+memory_config:
+  # Whether to disable persistent memory for this specific repository.
+  disabled: false
+
+# Configuration for code reviews.
+code_review:
+  # Disables Gemini from acting on pull requests.
+  disable: false
+
+  # The minimum severity of review comments to consider.
+  # Options: LOW, MEDIUM, HIGH, CRITICAL
+  comment_severity_threshold: MEDIUM
+
+  # The maximum number of review comments to consider. Use -1 for unlimited.
+  max_review_comments: -1
+
+  # Configuration for pull request opened events.
+  pull_request_opened:
+    # Posts a help message on pull request open.
+    help: false
+
+    # Posts a pull request summary on the pull request open.
+    summary: true
+
+    # Posts a code review on pull request open.
+    code_review: true
+
+    # Enables agent functionality on draft pull requests.
+    include_drafts: true
